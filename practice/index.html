@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bookmark Saver</title>
+</head>
+<body>
+  <h2>My Bookmarks</h2>
+  
+  <input type="text" id="siteName" placeholder="Website Name">
+  <input type="text" id="siteURL" placeholder="Website URL">
+  <button id="addBtn">Add Bookmark</button>
+  
+  <ul id="bookmarkList"></ul>
+
+  <script>
+    const addBtn = document.getElementById("addBtn");
+    const siteNameInput = document.getElementById("siteName");
+    const siteURLInput = document.getElementById("siteURL");
+    const bookmarkList = document.getElementById("bookmarkList");
+
+    addBtn.addEventListener("click", () => {
+      const name = siteNameInput.value.trim();
+      const url = siteURLInput.value.trim();
+
+      if (name && url) {
+        const li = document.createElement("li");
+        const a = document.createElement("a");
+
+        a.href = url.startsWith("http") ? url : `https://${url}`;
+        a.textContent = name;
+        a.target = "_blank";
+
+        li.appendChild(a);
+        bookmarkList.appendChild(li);
+
+        siteNameInput.value = "";
+        siteURLInput.value = "";
+      } else {
+        alert("Please enter both name and URL.");
+      }
+    });
+  </script>
+</body>
+</html>

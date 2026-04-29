@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project give by harry sir </title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Caveat&display=swap');
+</style>
+<style>
+    :root{
+        --head:pink;
+        --green:green;
+        --box1:orange;
+        --box2:blue;
+        --text-color:white;
+    }
+    *{
+        padding: 0;
+        margin: 0;
+        font-family: 'Baloo Bhai 2', sans-serif;
+    }
+    nav{
+      background-color: var(--head); 
+      padding: 8px;
+      /* margin: 2px; */
+    }
+    ul li{
+        list-style: none;
+       
+    }
+    ul{
+        display:flex;
+        gap: 10px;
+        position: sticky;
+        top: 0px;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: white;
+    }
+    .back-box {
+    position: relative; /* Use relative positioning */
+    width: 90vw;
+    height: 40vw;
+    margin: auto;
+    margin-top: 10px;
+    background-color: var(--green);
+}
+.box1 {
+    background-color: var(--box1);
+    width: 250px;
+    height: 250px;
+    position: absolute; /* Use absolute positioning */
+    top: 12%; /* Move to the vertical center */
+    left: 10%; /* Move to the horizontal center */
+}
+.box2 {
+    background-color: var(--box2);
+    width: 250px;
+    height: 250px;
+    position: absolute; /* Use absolute positioning */
+    top: 12%; /* Move to the vertical center */
+    left: 60%; /* Move to the horizontal center */
+}
+.text{
+    border: 2px solid black;
+    padding:2px;
+    width: 80vw;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    /* display: inline-block; */
+}
+.text img{
+    margin-right: 70px;
+}
+footer div {
+    margin-top: 10px;
+    background-color: red;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    height: 50px; /* Set the height as needed */
+}
+
+</style>
+<body>
+     <header>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About us</a></li>
+                <li><a href="">Contact us</a></li>
+                <li><a href="">Queary</a></li>
+            </ul>
+        </nav>
+     </header>
+      
+     <div class="back-box">
+          <div class="box1"></div>
+          <div class="box2"></div>
+     </div>
+
+     <div class="text">
+       <h1>Hi my name is xboy(IIIT UNA)</h1>
+       <img src="https://imgs.search.brave.com/WhtqCLsW44TlIfWzPv7jSDbiF8ptYAhKolSZtOkr4qM/rs:fit:860:0:0/g:ce/aHR0cHM6Ly8xMDAw/bG9nb3MubmV0L3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDE2LzEx/L2dvb2dsZV9sb2dv/LTY2N3g0MDAucG5n" height="250px" width="350px" alt="google-logo">
+     </div>
+
+     <footer>
+        <div></div>
+     </footer>
+</body>
+</html>

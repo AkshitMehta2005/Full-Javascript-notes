@@ -1,0 +1,61 @@
+<!-- create nav bar -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Caveat&display=swap');
+    </style>
+    <style>
+        :root {
+            --primary-color: rgba(134, 41, 134, 0.694);
+            --sec-color: rgb(191, 110, 214);
+            --text-color: white;
+        }
+
+        * {
+            font-family: 'Baloo Bhai 2', sans-serif;
+            margin: 0;
+            padding: 0;
+            font-weight: 600;
+        }
+        body{
+            background-color: var(--sec-color);
+        }
+        nav {
+            background-color: var(--primary-color);
+            padding: 12px 0;
+        }
+        ul{
+            display: flex;
+            margin: 10px;
+            gap: 10px;
+            padding: 3px;
+        }
+        ul li {
+            list-style: none;
+        }
+        ul li a{
+            text-decoration: none;
+            color: var(--text-color);
+        }
+       
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About us</a></li>
+                <li><a href="">Contact us </a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript has a asyncronus nature</title>
+</head>
+<body>
+    
+</body>
+ <script>
+    console.log("synchronous code"); // this will be logged first because it is synchronous
+    setTimeout(() => {
+        console.log("this is asynchronous callback function");
+    }, 2000);
+    console.log("Second");
+
+    // call back
+    const callback = (arg)=>{
+        console.log(arg);
+    }
+
+    const loadScript =(src,callback)=>{
+        let sc = document.createElement("script");
+        sc.src = src;
+        sc.onload = callback("akshit");
+        document.head.append(sc);
+    }
+    loadScript("https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js",callback)
+</script>
+</html>

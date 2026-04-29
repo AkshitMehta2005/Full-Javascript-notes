@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nav bar by using global variable</title>
+    <style>
+       :root{
+       --color:rgb(49, 49, 205);
+       --seccolor:rgb(101, 207, 120);
+       --tricolor:orange;
+       --fourcolor:pink;
+       --defob: 0.6;
+       --defpad:3px;
+    }
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        ul li{
+        list-style: none;
+        margin: 3px;
+        
+        }
+      ul{
+        display: flex;
+        margin: 25px;
+        gap: 15px;
+      }
+      .box{
+        border: 2px solid grey;
+        border-radius: 10px;
+        padding: 4px;
+      }
+      .box1{
+        background-color: var(--color);
+      }
+      .box2{
+        background-color: var(--seccolor);
+      }
+      .box3{
+        background-color: var(--tricolor);
+      }
+      .box4{background-color: var(--fourcolor);}
+      .box5{background-color: var(--color);}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="box box1">Home</li>
+            <li class="box box2">Contact us</li>
+            <li class="box box3">Help</li>
+            <li class="box box4">About Us</li>
+            <li class="box box5">Hostel form</li>
+        </ul>
+    </nav>
+</body>
+</html>

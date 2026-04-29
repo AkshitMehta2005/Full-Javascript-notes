@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Event Delegation Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      padding: 30px;
+    }
+
+    .container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      margin: auto;
+    }
+
+    .container span {
+      display: block;
+      padding: 10px;
+      margin-bottom: 8px;
+      background-color: #e0e0e0;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+
+    .container span:hover {
+      background-color: #c0c0c0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <span class="phone">phone</span>
+    <span class="laptop">rog 4 laptop</span>
+    <span class="laptop">Asus tuf</span>
+    <span class="laptop">Acer nitro</span>
+  </div>
+  
+
+  <script>
+    document.querySelector(".container").addEventListener("click", (event) => {
+      if (event.target.tagName === "SPAN") {
+        console.log("Clicked:", event.target.textContent);
+        alert("You clicked on: " + event.target.textContent);
+      }
+    });
+  </script>
+</body>
+</html>

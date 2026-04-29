@@ -1,0 +1,1 @@
+db.cources2.deleteOne({age:21})

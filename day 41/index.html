@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>make the nav bar using flex box</title>
+</head>
+<style>
+   
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    nav {
+        background-color: antiquewhite;
+        height: 10vh;   
+    }
+    .boxes {
+        /* border: 2px solid; */
+        background-color: antiquewhite;
+        text-align: center;
+        align-items: center;
+        color: black;
+        margin-top: 10px;
+        padding: 3px;
+    }
+    ul {
+        padding: 2px;
+        display: flex;
+        list-style: none;
+        gap: 10px;
+        justify-content: flex-end; /* Align items to the right */
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+           <ul>
+           <li class="boxes box1">Products</li>
+           <li class="boxes box2">Pricing</li>
+           <li class="boxes box3">Resources</li>
+           <li class="boxes box4">About us</li>
+           </ul>
+        </nav>
+    </header>
+</body>
+</html>

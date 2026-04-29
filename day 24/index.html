@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS outline and shadow</title>
+</head>
+<style>
+    .box{
+        border: 3px solid blue;
+        padding: 10px;
+        text-align: center;
+        width: 50px;
+        /* box-shadow: h-offset v-offset blur spread color |none|inset|initial|inherit; */
+          box-shadow: 5px 10px 10px pink;
+          /* insept karke dekho  */
+    }
+    .box2{
+        text-shadow: 2px 3px 3px rgb(144, 25, 181);
+        border: 5px solid black;
+        outline: 10px solid green;
+        padding: 80px;
+        width: 150px;
+    }
+</style>
+<body>
+     <div class="box">I am a box</div>
+     <p class="box2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, enim atque commodi laudantium animi nam natus corporis sed odit minima, perspiciatis culpa officiis.</p>
+</body>
+</html>

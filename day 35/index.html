@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>some more selector</title>
+</head>
+<style>
+/* .boxes *{
+border: 2px solid black;
+color: blue;
+}
+.box[data-color="padd"] {
+  padding-top: 4px;
+} */
+
+/* .box:nth-child(even){
+    background-color: green;
+} */
+.boxes::before{
+    content: "harry is good";
+}
+::selection{
+    color: aqua;
+    background-color: rgb(33, 5, 5);
+}
+.box::first-letter{
+    font-size: 45px;
+    color: peru;
+}
+div:button{
+    color: blue;
+    background-color: grey;
+}
+input::placeholder{
+    background-color: black;
+    color: white;
+}
+</style>
+<body>
+    <div class="boxes">
+        <div class="box" data-color="padd">I am a box 1</div>
+        <div class="box">I am a box 2</div>
+        <div class="box">I am a box 3</div>
+        <input type="text" placeholder="hi my name is akshit ">
+    </div>
+</body>
+</html>

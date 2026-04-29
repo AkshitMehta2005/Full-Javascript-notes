@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<style>
+  .box{
+      border: 2px solid red;
+      height: 40px;
+      width: 60px;
+  }
+  .box2{
+      border: 2px solid red;
+      height: 40px;
+      width: 60px;
+  }
+</style>
+<body>
+<div class="box"></div>  
+<div class="box2"></div>  
+
+</body>
+
+
+<script>
+  let randcolor = ()=>{
+    let a = Math.ceil(Math.random()*255)
+    let b = Math.ceil(Math.random()*255)
+    let c = Math.ceil(Math.random()*255)
+
+    return `rgb(${a},${b},${c})`
+
+  }
+
+  setInterval(() => {
+    document.querySelector('.box').style.backgroundColor = randcolor()
+  }, 1000);
+
+  setTimeout(()=>{
+    document.querySelector('.box2').style.backgroundColor = 'green'
+  },2000)
+</script>
+</html>
+

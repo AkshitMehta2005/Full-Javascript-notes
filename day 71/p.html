@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <div class="box1" name="akshit" >Hy I am a box 1</div>
+        <div class="box2">Hy I am a box 2</div>
+</body>
+<script>
+  let a = document.querySelector(".box1");
+
+ if(a.hasAttribute("name")){console.log("yes present")}else{console.log("not present")};
+   
+//  let a = document.querySelector(".box1").getAttribute("name")
+// VM80:1 Uncaught SyntaxError: Identifier 'a' has already been declared
+//  document.querySelector(".box1").getAttribute("name")
+// 'akshit'
+//  document.querySelector(".box1").setAttribute("name2","ram")
+
+
+// append
+
+// let div = document.createElement("div");
+// undefined
+// div.className("container111")
+// VM461:1 Uncaught TypeError: div.className is not a function
+//     at <anonymous>:1:5
+// (anonymous) @ VM461:1
+// div.className=("container111")
+// 'container111'
+// div.innerHTML="<b>i am new </b>";
+// '<b>i am new </b>'
+// document.body.append(div)
+
+</script>
+</html>

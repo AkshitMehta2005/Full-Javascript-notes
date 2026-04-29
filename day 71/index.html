@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom</title>
+    <style>
+        .red{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container bg green">
+        <div class="box red" data-createdby="akshit";>I am a box</div>
+    </div>
+</body>
+<script>
+    // dynamically
+
+    // document.designMode="on"
+    // let div = document.createElement("div");
+    // div.innerHTML = "I have been created by <b>Akshit Mehta</b>";
+    // div.setAttribute("class","created");
+    // document.querySelector(".container").append(div); // end mai dekne ke liye milta ha
+ 
+    //
+    // let cont = document.querySelector(".container");
+    // cont.insertAdjacentHTML("afterbegin","<b>after end</b>")
+   
+    // // delete
+    // document.querySelector(".box").remove()
+   
+    // document.querySelector(".container").classList
+    // document.querySelector(".container").className
+
+    // document.querySelector(".container").classList.add("harry")
+
+    // document.querySelector(".container").classList.remove("bg")
+
+    document.querySelector(".container").classList.toggle("red") // toggle red color
+</script>
+</html>

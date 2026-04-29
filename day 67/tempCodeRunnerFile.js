@@ -1,0 +1,1 @@
+document.body.firstElementChild.children[0].nextElementSibling;

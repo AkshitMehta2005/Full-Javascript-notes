@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>row and column</title>
+    <style>
+       *{
+        padding: 0;
+        margin: 0;
+       } 
+      main{
+        border: 2px solid black;
+        display: grid;
+        grid-template-areas: "nav nav nav"
+        "side article article"
+        "footer footer footer";
+        align-content: center;
+        
+       
+      }
+      .box{
+        border: 2px solid green;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+       
+      }
+      .box1{
+        grid-area: nav;
+      }
+      .box2{
+        grid-area: side;
+      }
+      .box3{
+        grid-area:article;
+      }
+      .box4{
+        grid-area:footer;
+      }
+    </style>
+</head>
+<body>
+     <main>
+        <div class="box box1">Header</div>
+        <div class="box box2">side</div>
+        <div class="box box3">article</div>
+        <div class="box box4">footer</div>
+       
+     </main>
+</body>
+</html>

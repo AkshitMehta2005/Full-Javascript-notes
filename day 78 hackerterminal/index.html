@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: lime;
+            color: lime;
+            font-size: 1.5rem;
+
+        }
+
+        #main-ul {
+            background: #000;
+            list-style-type: none;
+            height: 500px;
+            padding: 2rem;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <ul id="main-ul">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+<script>
+    let li_1 = document.getElementsByTagName("li");
+    let mess = ["Intializing Hacking", "<br>Reading your files", "<br>Password files Detected", "<br>Sending all passwords and personal files to server", "<br>Cleaning up"];
+    let mess2 = ["Intialized Hacking", "<br>Readed your files", "<br>Archived the Password files", "<br>Sended all passwords and personal files to server", "<br>Cleaned up"];
+    function dot(i) {
+        let dur = Math.floor(Math.random() * (700)) + 700;
+        console.log(dur);
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                li_1[i].innerText += ".";
+                resolve();
+            }, dur);
+        });
+    }
+  
+    let ul = document.getElementById("main-ul");
+    async function hacking_terminal() {
+        let li;
+        for (let i = 0; i < mess.length; i++) {
+            li_1[i].innerHTML = mess[i];
+            for (let j = 0; j < 5; j++) {
+                await dot(i);
+            }
+            li_1[i].innerHTML = mess2[i];
+        }
+    }
+    hacking_terminal();
+</script>
+
+</html>

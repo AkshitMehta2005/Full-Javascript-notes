@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>set interval and set time out</title>
+</head>
+<style>
+    .box{
+        border: 2px solid red;
+        height: 40px;
+        width: 60px;
+    }
+    .box2{
+        border: 2px solid red;
+        height: 40px;
+        width: 60px;
+    }
+</style>
+<body>
+ <div class="box"></div>  
+ <div class="box2"></div>  
+
+</body>
+<script>
+function getrandomcolor(){
+    let val1 = Math.ceil(0+Math.random()*255);
+    let val2 = Math.ceil(0+Math.random()*255);
+    let val3 = Math.ceil(0+Math.random()*255);
+    return `rgb(${val1},${val2},${val3})`
+}
+
+let a = setInterval(() => {
+    document.querySelector(".box").style.backgroundColor=getrandomcolor();
+}, 1000);
+// run only one time
+let b = setTimeout(() => {
+    document.querySelector(".box2").style.backgroundColor="black";
+}, 2000);
+</script>
+</html>

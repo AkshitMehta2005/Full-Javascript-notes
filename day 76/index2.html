@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>callback Apporach by data delay</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // this function run in backgrtound
+    function getData(){
+        return new Promise((resolve,reject)=>{
+            setTimeout(() => {
+                resolve(455);
+            }, 500);
+        })
+    }
+    console.log("Loading modulas");
+
+    console.log("DO something else");
+
+    console.log("loading data");
+    let data = getData()
+    
+
+    data.then((v)=>{
+        console.log(data);
+        console.log("processing data")
+    })
+</script>
+</html>

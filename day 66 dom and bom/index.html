@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOCUMENT OBJECT MODEL</title>
+</head>
+<body>
+    <div class="container">
+        <div>box</div>
+        <button onclick="bomredirect()">click for google redirect</button>
+    </div>
+    <script>
+        function bomredirect(){
+           window.location.href = "https://www.google.com";
+        }
+       
+        document.body.style.backgroundColor = "pink"
+    </script>
+</body>
+</html>
